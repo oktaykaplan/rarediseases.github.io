@@ -20,76 +20,100 @@
     <img src="logo.png" alt="Lab Logo">
   </div>
 
-  <div id="home">
-    <h1>Welcome to our website!</h1> 
-    <div class="gif-container">
-      <img src="figure3.png" alt="News Image">
+  <!-- HOME SECTION -->
+  <div id="home" class="section">
+    <h1>Welcome to the Kaplan Lab</h1>
+    <div class="home-image">
+      <img src="lab-overview.png" alt="Lab Overview">
     </div>
     <h2>News</h2>
-    <marquee direction="left">Congratulations to Ferhan Yenisert...</marquee>
+    <div class="news-ticker">
+      <marquee direction="left">Congratulations to Ferhan Yenisert...</marquee>
+    </div>
   </div>
 
-  <div id="research">
+  <!-- RESEARCH SECTION -->
+  <div id="research" class="section">
     <h2>Research</h2>
-    <h2>Utilizing Bioinformatics to Uncover Novel Ciliary Genes</h2>
+    <h3>Utilizing Bioinformatics to Uncover Novel Ciliary Genes</h3>
     <div class="gif-container">
       <img src="STAR_protocol.gif" alt="Research GIF">
     </div>
     <p>Our lab is primarily focused on ...</p> 
   </div>
 
-  <div id="team">
+  <!-- TEAM SECTION -->
+  <div id="team" class="section">
     <h2>Team</h2>
-    <h2>Cilia and Bioinformatics Team Members</h2>
+    <h3>Cilia and Bioinformatics Team Members</h3>
     <div class="team-container">
       <img src="Oktay.png" alt="Oktay">
       <p class="team-name">Oktay I. Kaplan</p>
     </div>
+    <!-- Add more team members as needed -->
   </div>
 
-  <div id="publications">
-    <h2>Preprints</h2>
-    <p>
-      Mustafa S. Pir, Ferhan Yenisert, Aslı Karaman, Efe Begar, Sofia Tsiropoulou, Elif Nur Firat-Karalar, Oliver E Blacque, Sukru S. Oner, Osman Doluca, Sebiha Cevik, Oktay I. Kaplan, 
-      <a href='https://doi.org/10.1093/g3journal/jkad227' style='color: blue;' target='_blank'>
-        CilioGenics: an integrated method and database for predicting novel ciliary genes
-      </a>, 
-      <strong>Under Review</strong>, bioRxiv 2023.03.31.535034; doi: https://doi.org/10.1101/2023.03.31.535034
-    </p>
-
+  <!-- PUBLICATIONS SECTION -->
+  <div id="publications" class="section">
     <h2>Publications</h2>
-    <h2>2023</h2>
-    <p>
-      Sebiha Cevik, Pei Zhao, Atiyye Zorluer, Mustafa S Pir, Wenyin Bian, Oktay I Kaplan, 
-      <a href='https://doi.org/10.1093/g3journal/jkad227' style='color: blue;' target='_blank'>
-        Matching variants for functional characterization of genetic variants
-      </a>, 
-      <strong>G3 Genes|Genomes|Genetics</strong>, 2023;, jkad227
-    </p>
+    
+    <h3>Preprints</h3>
+    <div class="publication-item">
+      <p>
+        Mustafa S. Pir, Ferhan Yenisert, Aslı Karaman, Efe Begar, Sofia Tsiropoulou, Elif Nur Firat-Karalar, Oliver E Blacque, Sukru S. Oner, Osman Doluca, Sebiha Cevik, Oktay I. Kaplan, 
+        <a href='https://doi.org/10.1093/g3journal/jkad227' target='_blank'>
+          CilioGenics: an integrated method and database for predicting novel ciliary genes
+        </a>, 
+        <strong>Under Review</strong>, bioRxiv 2023.03.31.535034; doi: https://doi.org/10.1101/2023.03.31.535034
+      </p>
+    </div>
+
+    <h3>2023</h3>
+    <div class="publication-item">
+      <p>
+        Sebiha Cevik, Pei Zhao, Atiyye Zorluer, Mustafa S Pir, Wenyin Bian, Oktay I Kaplan, 
+        <a href='https://doi.org/10.1093/g3journal/jkad227' target='_blank'>
+          Matching variants for functional characterization of genetic variants
+        </a>, 
+        <strong>G3 Genes|Genomes|Genetics</strong>, 2023;, jkad227
+      </p>
+    </div>
   </div>
 
-  <div id="lab-resources">
+  <!-- LAB RESOURCES SECTION -->
+  <div id="lab-resources" class="section">
     <h2>Lab Resources</h2>
-    <ul>
+    <ul class="resources-list">
       <li>
-        <a href="https://convart.org/" style="color: blue;" target="_blank">ConVarT</a>
+        <a href="https://convart.org/" target="_blank">ConVarT</a>
       </li>
       <li>
-        <a href="https://ciliogenics.com/" style="color: blue;" target="_blank">CilioGenics</a>
+        <a href="https://ciliogenics.com/" target="_blank">CilioGenics</a>
       </li>
       <li>
-        <a href="https://kaplanlab.shinyapps.io/ciliaminer/" style="color: blue;" target="_blank">CiliaMiner</a>
+        <a href="https://kaplanlab.shinyapps.io/ciliaminer/" target="_blank">CiliaMiner</a>
       </li>
       <li>
-        <a href="https://github.com/thekaplanlab" style="color: blue;" target="_blank">GitHub</a>
+        <a href="https://github.com/thekaplanlab" target="_blank">GitHub</a>
       </li>
     </ul>
   </div>
 
-  <div id="contact">
-    <h2>Get in touch with us</h2>
-    <p>Oktay I. Kaplan, Dr.</p>
-    <p>School of Life and Natural Sciences</p>
-    <p>AGU, Kayseri, Turkey</p>
-    <p>
-      <strong>Twitter:</strong> <a href="https://twitter.com/
+  <!-- CONTACT SECTION -->
+  <div id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>Oktay I. Kaplan, Dr.</p>
+      <p>School of Life and Natural Sciences</p>
+      <p>AGU, Kayseri, Turkey</p>
+      <p>
+        <strong>Twitter:</strong> <a href="https://twitter.com/KaplanOLab" target="_blank">KaplanOLab</a>
+      </p>
+      <p>
+        <strong>E-mail:</strong> <a href="mailto:oktay.kaplan@agu.edu.tr" target="_blank">oktay.kaplan@agu.edu.tr</a>
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
