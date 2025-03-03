@@ -4,17 +4,36 @@ on:
   push:
     branches:
       - main
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: '14'
-      - run: touch index.html  # Ensure index.html exists (optional if already present)
-      - uses: peaceiris/actions-gh-pages@v3
+          node-version: '16'
+          cache: 'npm'
+          
+      # If you're using any build tools, uncomment and modify these steps
+      # - name: Install dependencies
+      #   run: npm ci
+      #
+      # - name: Build site
+      #   run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
+          publish_dir: .  # The directory to publish (current directory)
+          cname: your-custom-domain.com  # Uncomment and modify if you have a custom domain
+          enable_jekyll: false
+          full_commit_message: 'Deploy: ${{ github.event.head_commit.message }}'
