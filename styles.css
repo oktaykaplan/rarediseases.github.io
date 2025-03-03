@@ -1,96 +1,120 @@
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  margin: 0; /* Remove default margin to ensure nav sticks to the top */
+  padding: 0;
 }
 
-/* Navigation Menu */
-nav {
-    background-color: #333;
-    padding: 10px 0;
-    text-align: center;
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #333; /* Dark background */
+  position: fixed; /* Fix the navbar at the top */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays above other content */
+  padding: 10px 0; /* Add padding for better appearance */
 }
 
-.nav-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-.nav-menu li {
-    margin: 0 15px;
+.navbar li {
+  margin: 0 20px; /* Spacing between menu items */
 }
 
-.nav-menu li a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    padding: 10px 15px;
+.navbar a {
+  color: white; /* Text color for visibility against dark background */
+  text-decoration: none;
+  font-size: 18px; /* Adjust font size as needed */
+  font-weight: bold;
 }
 
-.nav-menu li a:hover {
-    background-color: #555;
-    border-radius: 5px;
+.navbar a:hover {
+  color: lightblue; /* Hover effect */
 }
 
-/* Logo */
 #logo-container {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    max-height: 50px;
+  position: absolute;
+  top: 10px; /* Adjusted to avoid overlap with fixed navbar */
+  right: 10px;
+  max-height: 50px;
 }
 
-/* Section Styles */
-section {
-    padding: 20px;
-    text-align: center;
+#home {
+  padding-top: 60px; /* Prevent content from being hidden under fixed navbar */
 }
 
-/* Image and GIF Containers */
-.gif-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column; 
-    align-items: center; 
+.home-photo {
+  width: 1250px;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 60px;
 }
 
-/* Team Section */
-.team-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.alumni-section {
+  clear: both;
+  margin-top: 20px; 
+}
+
+.nav-tabs > li > a {
+  font-size: 20px !important; 
+}
+
+.tab-content {
+  margin-top: 20px;
 }
 
 .team-photo {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .team-name {
-    font-weight: bold;
-    text-align: center;
+  font-weight: bold;
+  text-align: center;
 }
 
-/* Lab Resources Links */
+.gif-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.main-header .navbar {
+  background-color: #333; /* Kept for reference, but not used in current HTML */
+}
+
+#ResearchHeading {
+  font-size: 30px;
+  font-weight: bold;
+  color: lightblue;
+}
+
 .lab-resources-content a {
-    font-size: 18px;
-    color: blue;
-    text-decoration: none;
+  font-size: 25px;
+  color: blue;
 }
 
-.lab-resources-content a:hover {
-    text-decoration: underline;
+#LabResourcesHeading {
+  font-size: 40px;
+  font-weight: bold;
+  color: lightblue;
 }
 
-/* Marquee (News) */
-marquee {
-    font-size: 18px;
-    font-weight: bold;
-    color: red;
+.lab-resources-content:before {
+  content: '\2022'; /* Bullet point */
+  margin-right: 10px; 
+  font-size: 30px; 
 }
