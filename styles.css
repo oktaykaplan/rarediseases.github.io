@@ -1,4 +1,4 @@
-ody {
+body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -79,6 +79,12 @@ ody {
   margin-bottom: 20px;
 }
 
+#research h4 {
+  color: lightblue;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
 .gif-container {
   display: flex;
   justify-content: center;
@@ -94,12 +100,19 @@ ody {
 /* Team Section */
 .team-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 20px 0;
 }
 
-.team-container img {
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+
+.team-photo {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -112,6 +125,12 @@ ody {
   text-align: center;
   margin-top: 10px;
   font-size: 1.2em;
+}
+
+.alumni-section {
+  clear: both;
+  margin-top: 20px;
+  color: #2c3e50;
 }
 
 /* Publications Section */
@@ -176,4 +195,43 @@ ody {
 
 .contact-info a:hover {
   text-decoration: underline;
+}
+
+/* Preserved Styles from Previous Versions */
+.home-photo {
+  width: 1250px;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 60px;
+}
+
+.nav-tabs > li > a {
+  font-size: 20px !important;
+}
+
+.tab-content {
+  margin-top: 20px;
+}
+
+#ResearchHeading {
+  font-size: 30px;
+  font-weight: bold;
+  color: lightblue;
+}
+
+.lab-resources-content a {
+  font-size: 25px;
+  color: blue;
+}
+
+#LabResourcesHeading {
+  font-size: 40px;
+  font-weight: bold;
+  color: lightblue;
+}
+
+.lab-resources-content:before {
+  content: '\2022';
+  margin-right: 10px;
+  font-size: 30px;
 }
