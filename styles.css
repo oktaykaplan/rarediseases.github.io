@@ -1,70 +1,96 @@
-.home-photo {
-    width: 1250px;
-    height: 400px;
-    object-fit: cover;
-    margin-bottom: 60px;
-  }
-  .alumni-section {
-    clear: both;
-    margin-top: 20px; 
-  }
-  .nav-tabs > li > a {
-    font-size: 20px !important; 
-  }
-  .tab-content {
-    margin-top: 20px;
-  }
-  .team-photo {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  .team-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .team-name {
-    font-weight: bold;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #333;
+    padding: 10px 0;
     text-align: center;
-  }
-  .gif-container {
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+}
+
+.nav-menu li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Logo */
+#logo-container {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    max-height: 50px;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Image and GIF Containers */
+.gif-container {
     display: flex;
     justify-content: center;
     flex-direction: column; 
     align-items: center; 
-  }
-  .navbar {
+}
+
+/* Team Section */
+.team-container {
     display: flex;
-    justify-content: center;
-  }
-  .main-header .navbar {
-    background-color: #333;
-  }
-  #ResearchHeading {
-    font-size: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-name {
     font-weight: bold;
-    color: lightblue;
-  }
-  .lab-resources-content a {
-    font-size: 25px;
+    text-align: center;
+}
+
+/* Lab Resources Links */
+.lab-resources-content a {
+    font-size: 18px;
     color: blue;
-  }
-  #LabResourcesHeading {
-    font-size: 40px;
+    text-decoration: none;
+}
+
+.lab-resources-content a:hover {
+    text-decoration: underline;
+}
+
+/* Marquee (News) */
+marquee {
+    font-size: 18px;
     font-weight: bold;
-    color: lightblue;
-  }
-  .lab-resources-content:before {
-    content: '\2022'; 
-    margin-right: 10px; 
-    font-size: 30px; 
-  }
-  
-  #logo-container {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    max-height: 50px;
-  }
+    color: red;
+}
