@@ -14,11 +14,11 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-    text-align: center; /* Center the navigation items */
+    text-align: center;
 }
 
 .navbar a {
-    display: inline-block; /* Inline-block for centering */
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 20px;
@@ -34,21 +34,21 @@ body {
 /* Main Container */
 .container {
     max-width: 1200px;
-    margin: 68px auto 20px auto; /* Adjusted for navbar height */
+    margin: 48px auto 20px auto; /* Adjusted to account for navbar height */
     padding: 20px;
 }
 
 /* Main Content */
 .main-content img {
-    width: 100%; /* Ensure the image matches the width of the text block */
-    max-width: 1160px; /* Matches container width minus padding */
+    width: 100%;
+    max-width: 1160px;
     height: auto;
-    margin: 0 auto; /* Center the image */
+    margin: 0 auto; /* No space between navbar and image */
     display: block;
 }
 
 .main-content p {
-    margin: 10px 0 0 0; /* Small space below image, none above */
+    margin: 10px 0 0 0;
 }
 
 /* Research Updates */
