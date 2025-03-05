@@ -14,10 +14,11 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
+    text-align: center; /* Center the navigation items */
 }
 
 .navbar a {
-    float: left;
+    display: inline-block; /* Change from float to inline-block for centering */
     color: white;
     text-align: center;
     padding: 14px 20px;
@@ -38,15 +39,11 @@ body {
 }
 
 /* Main Content */
-.main-content h1 {
-    margin: 0 0 10px 0;
-    font-size: 28px;
-}
-
 .main-content img {
     max-width: 100%;
     height: auto;
-    margin: 10px 0;
+    margin: 10px auto; /* Center the image and reduce spacing */
+    display: block; /* Ensure the image is centered */
 }
 
 .main-content p {
