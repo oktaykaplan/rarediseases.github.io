@@ -1,3 +1,4 @@
+/* General body styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,6 +6,7 @@ body {
     text-align: center;
 }
 
+/* Navigation button styles */
 header {
     background: #333;
     color: white;
@@ -30,6 +32,7 @@ nav ul li a {
     font-size: 18px;
 }
 
+/* Home section styling */
 #home {
     max-width: 900px;
     margin: 20px auto;
@@ -41,25 +44,47 @@ nav ul li a {
     height: auto;
 }
 
+/* Research Updates section */
 #research-updates {
     max-width: 1200px;
     margin: 20px auto;
     text-align: center;
 }
 
+/* Flexbox layout for research papers */
 .papers-container {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    padding: 0 20px;  /* Added some padding to avoid edge issues */
 }
 
+/* Paper card styling */
 .paper {
     width: 30%;
     text-align: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
 }
 
 .paper img {
     width: 100%;
     height: auto;
+    margin-bottom: 15px;
+}
+
+/* Footer section styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
 }
