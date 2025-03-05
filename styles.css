@@ -34,17 +34,17 @@ body {
 /* Main Container */
 .container {
     max-width: 1200px;
-    margin: 48px auto 20px auto; /* Adjusted to account for navbar height */
+    margin: 68px auto 20px auto; /* Adjusted for navbar height */
     padding: 20px;
 }
 
 /* Main Content */
 .main-content img {
-    width: 100%; /* Match the width of the text block */
+    width: 100%; /* Ensure the image matches the width of the text block */
     max-width: 1160px; /* Matches container width minus padding */
     height: auto;
-    margin: 0 auto; /* No space between navbar and image */
-    display: block; /* Center the image */
+    margin: 0 auto; /* Center the image */
+    display: block;
 }
 
 .main-content p {
