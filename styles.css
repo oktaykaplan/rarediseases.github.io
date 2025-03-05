@@ -18,7 +18,7 @@ body {
 }
 
 .navbar a {
-    display: inline-block; /* Change from float to inline-block for centering */
+    display: inline-block; /* Inline-block for centering */
     color: white;
     text-align: center;
     padding: 14px 20px;
@@ -34,20 +34,21 @@ body {
 /* Main Container */
 .container {
     max-width: 1200px;
-    margin: 60px auto 20px auto;
+    margin: 48px auto 20px auto; /* Adjusted to account for navbar height */
     padding: 20px;
 }
 
 /* Main Content */
 .main-content img {
-    max-width: 100%;
+    width: 100%; /* Match the width of the text block */
+    max-width: 1160px; /* Matches container width minus padding */
     height: auto;
-    margin: 10px auto; /* Center the image and reduce spacing */
-    display: block; /* Ensure the image is centered */
+    margin: 0 auto; /* No space between navbar and image */
+    display: block; /* Center the image */
 }
 
 .main-content p {
-    margin: 0 0 10px 0;
+    margin: 10px 0 0 0; /* Small space below image, none above */
 }
 
 /* Research Updates */
