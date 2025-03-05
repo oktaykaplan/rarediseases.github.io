@@ -1,4 +1,3 @@
-/* General body styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,11 +5,14 @@ body {
     text-align: center;
 }
 
-/* Navigation button styles */
 header {
     background: #333;
     color: white;
     padding: 10px 0;
+}
+
+header h1 {
+    margin-bottom: 5px; /* Reduced space between title and nav */
 }
 
 nav ul {
@@ -22,45 +24,42 @@ nav ul {
     gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-}
-
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
 
-/* Home section styling */
 #home {
     max-width: 900px;
-    margin: 20px auto;
+    margin: 10px auto; /* Reduced margin */
     text-align: center;
 }
 
 #home img {
     max-width: 100%;
     height: auto;
+    margin: 10px 0; /* Reduced margin */
 }
 
-/* Research Updates section */
+#home p {
+    margin-top: 10px; /* Reduced margin */
+}
+
 #research-updates {
     max-width: 1200px;
     margin: 20px auto;
     text-align: center;
 }
 
-/* Flexbox layout for research papers */
 .papers-container {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    padding: 0 20px;  /* Added some padding to avoid edge issues */
+    padding: 0 20px;
 }
 
-/* Paper card styling */
 .paper {
     width: 30%;
     text-align: center;
@@ -68,15 +67,15 @@ nav ul li a {
     padding: 15px;
     border-radius: 8px;
     border: 1px solid #ddd;
+    box-sizing: border-box; /* Important for consistent width */
 }
 
 .paper img {
     width: 100%;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Reduced margin */
 }
 
-/* Footer section styling */
 footer {
     background-color: #333;
     color: white;
@@ -87,4 +86,16 @@ footer {
 footer a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .paper {
+        width: 48%; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 500px) {
+    .paper {
+        width: 100%; /* Stack on very small screens */
+    }
 }
