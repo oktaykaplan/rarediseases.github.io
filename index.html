@@ -3,50 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rare Disease Lab</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Cilia Research - Kaplan's Lab</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Rare Disease Lab</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="people.html">People</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="opportunities.html">Opportunities</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#research">Research</a>
+        <a href="#updates">Updates</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <section id="home">
-        <h2>Welcome to the Rare Disease Lab</h2>
-        <img src="Proposal_Figure3.png" alt="Cilia research">
-        <p>Cilia are microtubule-based cellular projections essential for a wide range of biological processes. They function in sensory perception, detecting chemical, mechanical, and light stimuli, and drive fluid movement across cell surfaces. Additionally, cilia enable cellular motility and play a crucial role in embryonic development by orchestrating molecular signaling, receiving and transmitting signals vital for proper development and homeostasis. Dysfunction of cilia leads to a variety of diseases, known as ciliopathies. Kaplan's lab aims to unravel the mechanisms governing cilia function, including intraflagellar transport (IFT) and the impact of genetic variants, to better understand and ultimately treat these debilitating diseases.</p>
-    </section>
+    <div class="container">
+        <section class="main-content">
+            <h1>Cilia Research</h1>
+            <img src="elegans.png" alt="Cilia Illustration">
+            <p>Cilia are microtubule-based cellular projections essential for a wide range of biological processes. They function in sensory perception, detecting chemical, mechanical, and light stimuli, and drive fluid movement across cell surfaces. Additionally, cilia enable cellular motility and play a crucial role in embryonic development by orchestrating molecular signaling, receiving and transmitting signals vital for proper development and homeostasis. Dysfunction of cilia leads to a variety of diseases, known as ciliopathies. Kaplan's lab aims to unravel the mechanisms governing cilia function, including intraflagellar transport (IFT) and the impact of genetic variants, to better understand and ultimately treat these debilitating diseases.</p>
+        </section>
 
-    <section id="research-updates">
-        <h2>Research Updates</h2>
-        <div class="papers-container">
-            <div class="paper">
-                <img src="elegans.png" alt="Research Paper">
-                <p><strong>Pir MS, Begar E, Yenisert F, Demirci HC, Korkmaz ME, Karaman A, Tsiropoulou S, Firat-Karalar EN, Blacque OE, Oner SS, Doluca O, Cevik S, Kaplan OI.</strong> CilioGenics: an integrated method and database for predicting novel ciliary genes. <em>Nucleic Acids Res.</em> 2024 Aug 12;52(14):8127-8145. doi: <a href="https://doi.org/10.1093/nar/gkae554">10.1093/nar/gkae554</a>.</p>
+        <section class="research-updates">
+            <h2>Research Updates</h2>
+            <div class="research-grid">
+                <div class="research-item">
+                    <img src="elegans.png" alt="Research Icon">
+                    <p>Pir MS, Cevik S, Kaplan OI. <strong>CilioGenics: an integrated method and database for predicting novel ciliary genes.</strong> Nucleic Acids Res. 2024 Aug 12;52(14):8127-8145. doi: <a href="https://doi.org/10.1093/nar/gkae554">https://doi.org/10.1093/nar/gkae554</a></p>
+                </div>
+                <div class="research-item">
+                    <img src="elegans.png" alt="Research Icon">
+                    <p>Pir MS, Cevik S, Kaplan OI. <strong>ConVarT: a search engine for matching human genetic variants with variants from non-human species.</strong> Nucleic Acids Res. 2022 Jan 7;50(D1):D1172-D1178. doi: <a href="https://doi.org/10.1093/nar/gkab939">https://doi.org/10.1093/nar/gkab939</a></p>
+                </div>
+                <div class="research-item">
+                    <img src="elegans.png" alt="Research Icon">
+                    <p>Turan MG, Kantarci H, Cevik S, Kaplan OI. <strong>ARL13B regulates juxtaposed cilia-cilia elongation in BBSome dependent manner in Caenorhabditis elegans.</strong> iScience. 2025 Jan 10;28(2):111791. doi: <a href="https://doi.org/10.1016/j.isci.2025.111791">https://doi.org/10.1016/j.isci.2025.111791</a></p>
+                </div>
             </div>
-            <div class="paper">
-                <img src="elegans.png" alt="Research Paper">
-                <p><strong>Pir MS, Bilgin HI, Sayici A, Coşkun F, Torun FM, Zhao P, Kang Y, Cevik S, Kaplan OI.</strong> ConVarT: a search engine for matching human genetic variants with variants from non-human species. <em>Nucleic Acids Res.</em> 2022 Jan 7;50(D1):D1172-D1178. doi: <a href="https://doi.org/10.1093/nar/gkab939">10.1093/nar/gkab939</a>.</p>
-            </div>
-            <div class="paper">
-                <img src="elegans.png" alt="Research Paper">
-                <p><strong>Turan MG, Kantarci H, Cevik S, Kaplan OI.</strong> ARL13B regulates juxtaposed cilia-cilia elongation in BBSome dependent manner in <em>Caenorhabditis elegans</em>. <em>iScience.</em> 2025 Jan 10;28(2):111791. doi: <a href="https://doi.org/10.1016/j.isci.2025.111791">10.1016/j.isci.2025.111791</a>.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Rare Disease Lab | <a href="contact.html">Contact Us</a></p>
-    </footer>
+        </section>
+    </div>
 </body>
 </html>
