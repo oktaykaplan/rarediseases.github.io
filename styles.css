@@ -37,6 +37,7 @@ body {
     margin: 60px auto 20px auto; /* Adjusted to account for navbar height */
     padding: 20px;
 }
+
 /* Main Content */
 .main-content h1 {
     margin: 0 0 10px 0;
@@ -83,4 +84,22 @@ body {
 
 .research-item p {
     margin: 0;
+}
+
+/* Research Section */
+.research-section {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+}
+
+.research-item {
+    display: flex;
+    align-items: flex-start; /* Align image and text to the top */
+    margin-bottom: 20px; /* Space between research items */
+}
+
+.research-item img {
+    width: 200px; /* Adjust image width as needed */
+    height: auto;
+    margin-right: 20px; /* Space between image and text */
 }
