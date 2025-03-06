@@ -3,57 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cilia Research - Kaplan's Lab</title>
+    <title>Kaplan's Lab</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(sec => sec.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
 </head>
 <body>
+
     <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#research" onclick="loadContent('research.html')">Research</a>
-        <a href="#people">People</a>
-        <a href="#publications">Publications</a>
-        <a href="#open-positions">Open Positions</a>
-        <a href="#news">News</a>
-        <a href="#group-photos">Group Photos</a>
+        <a href="#home" onclick="showSection('home')">Home</a>
+        <a href="#research" onclick="showSection('research')">Research</a>
+        <a href="#people" onclick="showSection('people')">People</a>
+        <a href="#publications" onclick="showSection('publications')">Publications</a>
+        <a href="#open-positions" onclick="showSection('open-positions')">Open Positions</a>
+        <a href="#news" onclick="showSection('news')">News</a>
+        <a href="#group-photos" onclick="showSection('group-photos')">Group Photos</a>
     </nav>
 
     <div class="container">
-        <section id="home" class="main-content">
-            <img src="figure3.png" alt="Cilia Illustration">
-            <p>Cilia are microtubule-based cellular projections essential for a wide range of biological processes. They function in sensory perception, detecting chemical, mechanical, and light stimuli, and drive fluid movement across cell surfaces. Additionally, cilia enable cellular motility and play a crucial role in embryonic development by orchestrating molecular signaling, receiving and transmitting signals vital for proper development and homeostasis. Dysfunction of cilia leads to a variety of diseases, known as ciliopathies. Kaplan's lab aims to unravel the mechanisms governing cilia function, including intraflagellar transport (IFT) and the impact of genetic variants, to better understand and ultimately treat these debilitating diseases.</p>
+        <section id="home" class="section">
+            <h1>Welcome to Kaplan's Lab</h1>
+            <p>Researching ciliopathies, genetic disorders, and more.</p>
         </section>
 
-        <div id="contentArea"></div>
+        <section id="research" class="section" style="display: none;">
+            <h1>Research</h1>
+            <img src="figure3.png" alt="Cilia Illustration">
+            <p>Cilia are microtubule-based structures essential for cellular function...</p>
+        </section>
 
-        <section class="research-updates">
-            <h2>Research Updates</h2>
-            <div class="research-grid">
-                <div class="research-item">
-                    <img src="elegans.png" alt="Research Icon">
-                    <p>Pir MS, Cevik S, Kaplan OI. <strong>CilioGenics: an integrated method and database for predicting novel ciliary genes.</strong> Nucleic Acids Res. 2024 Aug 12;52(14):8127-8145. doi: <a href="https://doi.org/10.1093/nar/gkae554">https://doi.org/10.1093/nar/gkae554</a></p>
-                </div>
-                <div class="research-item">
-                    <img src="elegans.png" alt="Research Icon">
-                    <p>Pir MS, Cevik S, Kaplan OI. <strong>ConVarT: a search engine for matching human genetic variants with variants from non-human species.</strong> Nucleic Acids Res. 2022 Jan 7;50(D1):D1172-D1178. doi: <a href="https://doi.org/10.1093/nar/gkab939">https://doi.org/10.1093/nar/gkab939</a></p>
-                </div>
-                <div class="research-item">
-                    <img src="elegans.png" alt="Research Icon">
-                    <p>Turan MG, Kantarci H, Cevik S, Kaplan OI. <strong>ARL13B regulates juxtaposed cilia-cilia elongation in BBSome dependent manner in Caenorhabditis elegans.</strong> iScience. 2025 Jan 10;28(2):111791. doi: <a href="https://doi.org/10.1016/j.isci.2025.111791">https://doi.org/10.1016/j.isci.2025.111791</a></p>
-                </div>
-            </div>
+        <section id="people" class="section" style="display: none;">
+            <h1>People</h1>
+            <p>Meet the brilliant minds behind our research.</p>
+        </section>
+
+        <section id="publications" class="section" style="display: none;">
+            <h1>Publications</h1>
+            <p>Read our latest research papers.</p>
+        </section>
+
+        <section id="open-positions" class="section" style="display: none;">
+            <h1>Open Positions</h1>
+            <p>Join our lab and contribute to groundbreaking research.</p>
+        </section>
+
+        <section id="news" class="section" style="display: none;">
+            <h1>News</h1>
+            <p>Latest updates from our lab.</p>
+        </section>
+
+        <section id="group-photos" class="section" style="display: none;">
+            <h1>Group Photos</h1>
+            <p>See our lab team in action.</p>
         </section>
     </div>
-    <script>
-        async function loadContent(pageUrl) {
-            try {
-                const response = await fetch(pageUrl);
-                const html = await response.text();
-                document.getElementById('contentArea').innerHTML = html;
-            } catch (error) {
-                console.error('Error loading page:', error);
-                document.getElementById('contentArea').innerHTML = '<p>Error loading content.</p>';
-            }
-        }
-    </script>
+
 </body>
 </html>
