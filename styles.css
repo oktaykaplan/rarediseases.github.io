@@ -1,77 +1,44 @@
-/* For the smaller image in home section */
-.small-image {
-    width: 150px; /* Adjust as needed to match text size */
-    height: auto;
-    margin: 0 10px 10px 0;
-    float: left;
-}
+<style>
+    .small-image {
+        width: 100%; /* Adjust this based on actual container width */
+        max-width: 600px; /* Example max size */
+        display: block;
+        margin: 0 auto;
+    }
 
-/* For larger research images */
-.large-image {
-    width: 300px; /* Enlarged size for research images */
-    height: auto;
-    margin-bottom: 15px;
-}
+    .research-section {
+        display: flex;
+        align-items: center;
+    }
 
-/* For research updates grid */
-.research-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
+    .research-icon {
+        width: 24px; /* Adjust icon size */
+        height: 24px;
+        margin-right: 10px;
+    }
 
-.research-item {
-    text-align: left;
-    width: 300px;
-}
+    .research-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+</style>
 
-.research-item img {
-    width: 50px;
-    height: auto;
-    margin-right: 10px;
-    float: left;
-}
+<img src="figure3.png" alt="Cilia Illustration" class="small-image">
 
-/* For team grid layout */
-.team-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
+<div class="research-section">
+    <div class="research-item">
+        <img src="research-icon.png" alt="Research Icon" class="research-icon">
+        <p>Pir MS, Cevik S, Kaplan OI. CilioGenics: an integrated method...</p>
+    </div>
 
-.team-member {
-    text-align: center;
-    width: 200px;
-}
+    <div class="research-item">
+        <img src="research-icon.png" alt="Research Icon" class="research-icon">
+        <p>Pir MS, Cevik S, Kaplan OI. ConVarT: a search engine for matching...</p>
+    </div>
 
-.team-member img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-/* General container styling */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Navbar styling */
-.navbar {
-    background-color: #f8f8f8;
-    padding: 10px;
-    text-align: center;
-}
-
-.navbar a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #333;
-}
-
-.navbar a:hover {
-    color: #007bff;
-}
+    <div class="research-item">
+        <img src="research-icon.png" alt="Research Icon" class="research-icon">
+        <p>Turan MG, Kantarci H, Cevik S, Kaplan OI. ARL13B regulates...</p>
+    </div>
+</div>
