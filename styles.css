@@ -102,7 +102,7 @@ body {
 }
 
 .research-item img {
-    width: 50px;
+    width: 70px;
     height: auto;
     border-radius: 50%;
 }
@@ -129,6 +129,11 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+.section h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
 }
 
 /* Footer */
