@@ -9,11 +9,11 @@
      function showSection(sectionId) {
     // Hide all sections
     document.querySelectorAll('.section').forEach(sec => {
-        sec.style.display = 'none';
+        sec.style.display = 'none'; 
     });
 
     // Show the selected section
-    document.getElementById(sectionId).style.display = 'block';
+    document.getElementById(sectionId).style.display = 'block'; 
 }
     </script>
     <style>
@@ -193,7 +193,7 @@
             <h1>Group Photos</h1>
             <p>See our lab team in action.</p>
         </section>
-        <section id="team" class="section">
+       <section id="team" class="section" style="display: none;"> 
     <h1>Team Members</h1>
     <div class="people-section">
         <div class="person"> <img src="Oktay.png" alt="Oktay I. Kaplan">
