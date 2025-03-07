@@ -60,7 +60,7 @@ body {
 /* Image Styling */
 .small-image {
     width: 100%;
-    max-width: 600px; /* Matches the width of the text block */
+    max-width: calc(100% - 40px); /* Adjust based on padding/margins */
     display: block;
     margin: 10px auto;
 }
