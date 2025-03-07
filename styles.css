@@ -50,11 +50,11 @@ body {
 
 /* Sections */
 .section {
-    display: none;
+    display: none; 
 }
 
 .section:first-of-type {
-    display: block;
+    display: block; 
 }
 
 /* Image Styling */
@@ -141,6 +141,7 @@ body {
     gap: 20px;
     justify-items: center;
     padding: 20px;
+    margin-top: 80px; /* Space for navbar */
 }
 
 /* Each Person Card */
@@ -180,6 +181,23 @@ footer {
     background-color: #004080;
     color: white;
     border-radius: 5px;
+}
+
+/* Publication List */
+.publication-list {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin-top: 10px;
+}
+
+.publication-list li {
+    margin-bottom: 10px; 
+}
+
+.publication-year {
+    font-weight: bold;
+    color: #004080; /* Match the blue color from your navbar */
+    margin-top: 20px;
 }
 
 /* Responsive Design */
