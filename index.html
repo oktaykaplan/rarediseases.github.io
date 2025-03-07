@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaplan's Lab</title>
-    <link rel="stylesheet" href="styles.css">
-    <script>
-     function showSection(sectionId) {
-    // Hide all sections
-    document.querySelectorAll('.section').forEach(sec => {
-        sec.style.display = 'none'; 
-    });
-
-    // Show the selected section
-    document.getElementById(sectionId).style.display = 'block'; 
-}
-    </script>
-    <style>
-        /* Custom style to change text color for "Research Interests" */
-        .research-interests h2 {
-            color: blue;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaplan's Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(sec => {
+                sec.style.display = 'none'; 
+            });
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block'; 
+        }
+    </script>
+    <style>
+        /* Custom style to change text color for "Research Interests" */
+        .research-interests h2 {
+            color: blue;
+        }
+    </style>
 </head>
 <body>
 
@@ -87,6 +86,46 @@
         </div>
     </div>
 </section>
+        <section id="team" class="section" style="display: none;"> 
+            <h1>Team Members</h1>
+            <div class="people-section">
+                <div class="person">
+                    <img src="Oktay.png" alt="Oktay I. Kaplan">
+                    <h3>Oktay I. Kaplan, Dr.</h3>
+                    <p>Principal Investigator</p>
+                </div>
+                <div class="person">
+                    <img src="sebihacevikaplan.png" alt="Sebiha Cevik">
+                    <h3>Sebiha Cevik, Dr.</h3>
+                    <p>Principal Investigator</p>
+                </div>
+                <div class="person">
+                    <img src="elegans.png" alt="Ferhan Yenisert">
+                    <h3>Ferhan Yenisert</h3>
+                    <p>PhD Student</p>
+                </div>
+                <div class="person">
+                    <img src="elegans.png" alt="Damal Puçak">
+                    <h3>Damal Puçak</h3>
+                    <p>Graduate Student</p>
+                </div>
+                <div class="person">
+                    <img src="elegans.png" alt="Sinem Güzel">
+                    <h3>Sinem Güzel</h3>
+                    <p>Graduate Student</p>
+                </div>
+                <div class="person">
+                    <img src="elegans.png" alt="Fatma Güzel">
+                    <h3>Fatma Güzel</h3>
+                    <p>Graduate Student</p>
+                </div>
+                <div class="person">
+                    <img src="elegans.png" alt="Zanyar Demir">
+                    <h3>Zanyar Demir</h3>
+                    <p>Graduate Student</p>
+                </div>
+            </div>
+        </section>
         <section id="publications" class="section" style="display: none;">
     <h1>Publications</h1>
     <ul class="publication-list">
@@ -193,39 +232,6 @@
             <h1>Group Photos</h1>
             <p>See our lab team in action.</p>
         </section>
-       <section id="team" class="section" style="display: none;"> 
-    <h1>Team Members</h1>
-    <div class="people-section">
-        <div class="person"> <img src="Oktay.png" alt="Oktay I. Kaplan">
-            <h3>Oktay I. Kaplan, Dr.</h3>
-            <p>Principal Investigator</p>
-        </div>
-        <div class="person"> <img src="sebihacevikaplan.png" alt="Sebiha Cevik">
-            <h3>Sebiha Cevik, Dr.</h3>
-            <p>Principal Investigator</p>
-        </div>
-        <div class="person"> <img src="elegans.png" alt="Ferhan Yenisert">
-            <h3>Ferhan Yenisert</h3>
-            <p>PhD Student</p>
-        </div>
-        <div class="person"> <img src="elegans.png" alt="Damal Puçak">
-            <h3>Damal Puçak</h3>
-            <p>Graduate Student</p>
-        </div>
-        <div class="person"> <img src="elegans.png" alt="Sinem Güzel">
-            <h3>Sinem Güzel</h3>
-            <p>Graduate Student</p>
-        </div>
-        <div class="person"> <img src="elegans.png" alt="Fatma Güzel">
-            <h3>Fatma Güzel</h3>
-            <p>Graduate Student</p>
-        </div>
-        <div class="person"> <img src="elegans.png" alt="Zanyar Demir">
-            <h3>Zanyar Demir</h3>
-            <p>Graduate Student</p>
-        </div>
-    </div>
-</section>
     <footer>
         <p>© 2025 Kaplan's Lab</p>
     </footer>
