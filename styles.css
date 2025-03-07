@@ -213,7 +213,7 @@ footer {
 }
 
 .publication-item img {
-    width: 50px;
+    width: 50px;  /* Adjust size of the icon */
     height: auto;
 }
 
@@ -231,6 +231,7 @@ footer {
 .publication-item a:hover {
     text-decoration: underline;
 }
+
 
 /* Hide People Section by Default */
 .hide-people {
