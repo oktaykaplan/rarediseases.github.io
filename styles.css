@@ -104,6 +104,7 @@ body {
 .research-item img {
     width: 50px;
     height: auto;
+    border-radius: 50%;
 }
 
 /* Research Interests */
@@ -114,43 +115,6 @@ body {
     border-left: 5px solid #004080;
     border-radius: 5px;
     color: #333;
-}
-
-/* People Section Styling */
-.people-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    padding: 20px;
-}
-
-.person {
-    text-align: center;
-    width: 200px;
-}
-
-.person img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.person img:hover {
-    transform: scale(1.1);
-}
-
-.person h3 {
-    font-size: 1.1em;
-    margin: 10px 0 5px;
-}
-
-.person p {
-    font-size: 0.9em;
-    color: gray;
 }
 
 /* Footer */
