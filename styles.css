@@ -50,11 +50,11 @@ body {
 
 /* Sections */
 .section {
-    display: none; 
+    display: none;
 }
 
 .section:first-of-type {
-    display: block; 
+    display: block;
 }
 
 /* Image Styling */
@@ -191,7 +191,7 @@ footer {
 }
 
 .publication-list li {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .publication-year {
@@ -233,4 +233,20 @@ footer {
         width: 120px;
         height: 120px;
     }
+}
+
+/* Hide People Section by Default */
+.hide-people {
+    display: none;
+}
+
+/* Specific Styles for People Page */
+body.people #home .section,
+body.people #research .section,
+body.people #publications .section {
+    display: none;
+}
+
+.people #home .section {
+    display: block;
 }
