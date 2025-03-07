@@ -143,7 +143,6 @@ body {
     justify-items: center;
     padding: 20px;
     margin-top: 80px; /* Space for navbar */
-    display: none; /* Hide by default */
 }
 
 /* Each Person Card */
@@ -184,6 +183,7 @@ footer {
     color: white;
     border-radius: 5px;
 }
+
 /* Publications Title */
 .publications-title {
     background-color: #004080;
@@ -232,12 +232,6 @@ footer {
     text-decoration: underline;
 }
 
-
-/* Hide the People section by default */
-.people-section {
-    display: none; /* Hidden by default */
-}
-
 /* Display People section when on the People page */
 body.people .people-section {
     display: grid; /* Show the people section only on the People page */
@@ -248,4 +242,3 @@ body:not(.people) .team-member,
 body:not(.people) .person {
     display: none;
 }
-
