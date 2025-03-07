@@ -6,16 +6,14 @@
     <title>Kaplan's Lab</title>
     <link rel="stylesheet" href="styles.css">
     <script>
-        function showSection(sectionId) {
-  // Hide all sections with the class 'section' EXCEPT the 'team' section
-  document.querySelectorAll('.section').forEach(sec => {
-    if (sec.id !== 'team') { 
-      sec.style.display = 'none';
-    }
-  });
+     function showSection(sectionId) {
+    // Hide all sections
+    document.querySelectorAll('.section').forEach(sec => {
+        sec.style.display = 'none';
+    });
 
-  // Show the selected section
-  document.getElementById(sectionId).style.display = 'block'; 
+    // Show the selected section
+    document.getElementById(sectionId).style.display = 'block';
 }
     </script>
     <style>
