@@ -60,7 +60,7 @@ body {
 /* Image Styling */
 .small-image {
     width: 100%;
-    max-width: calc(100% - 40px); /* Adjust based on padding/margins */
+    max-width: calc(100% - 40px);
     display: block;
     margin: 10px auto;
 }
@@ -102,11 +102,11 @@ body {
 /* Research Interests */
 .research-section {
     margin-top: 20px;
-    background: #f9f9f9; /* Light background */
+    background: #f9f9f9; /* Ensure it's light gray */
     padding: 15px;
     border-left: 5px solid #004080;
     border-radius: 5px;
-    color: #333; /* Ensure text is not black */
+    color: #333; /* Ensure text color is not black */
 }
 
 .research-section img {
@@ -143,25 +143,26 @@ body {
     justify-items: center;
     padding: 20px;
     margin-top: 80px; /* Space for navbar */
+    display: none; /* Hide by default */
 }
 
 /* Each Person Card */
 .person {
     text-align: center;
-    width: 200px; /* Ensures uniform size */
+    width: 200px;
 }
 
 .person img {
-    width: 150px; /* Adjust image size */
-    height: 150px; /* Keep it square */
-    border-radius: 50%; /* Circular images */
-    object-fit: cover; /* Crop to fit */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
 
 .person img:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
+    transform: scale(1.1);
 }
 
 .person h3 {
@@ -183,22 +184,47 @@ footer {
     color: white;
     border-radius: 5px;
 }
+/* Publication Title Styling */
+.publications-title {
+    background-color: #004080;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
 
 /* Publication List */
 .publication-list {
     list-style: none; /* Remove default bullet points */
     padding: 0;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .publication-list li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    background-color: #e6f2ff;  /* Light blue background */
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between; /* Space out title and year */
+    align-items: center;
+}
+
+.publication-list li a {
+    color: #004080; /* Match the blue color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.publication-list li a:hover {
+    text-decoration: underline;
 }
 
 .publication-year {
     font-weight: bold;
-    color: #004080; /* Match the blue color from your navbar */
-    margin-top: 20px;
+    color: #004080; /* Match the blue color */
 }
 
 /* Hide People Section by Default */
@@ -208,7 +234,7 @@ footer {
 
 /* Specific Styles for People Page */
 body.people .people-section {
-    display: grid; /* Ensures People Section is visible */
+    display: grid; /* Show people section only on People page */
 }
 
 body.people #home .section,
