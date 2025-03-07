@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaplan's Lab</title>
-    <link rel="stylesheet" href="styles.css">
-    <script>
-        function showSection(sectionId) {
-            document.querySelectorAll('.section').forEach(sec => sec.style.display = 'none');
-            document.getElementById(sectionId).style.display = 'block';
-        }
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaplan's Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(sec => sec.style.display = 'none');
+            // If the section is "people", display it without hiding other sections
+            if (sectionId !== 'people') {
+                document.getElementById(sectionId).style.display = 'block';
+            } else {
+                document.getElementById('people').style.display = 'block';
+            }
+        }
+    </script>
+    <style>
+        /* Custom style to change text color for "Research Interests" */
+        .research-interests h2 {
+            color: blue;
+        }
+    </style>
 </head>
 <body>
 
@@ -49,10 +61,7 @@
     </div>
 </section>
 
-        <section id="research" class="section" style="display: none;">
-    <h1>Research</h1>
-    <p>Cilia are microtubule-based structures essential for cellular function...</p>
-    
+        <section id="research" class="section" style="display: none;">    
     <div class="research-interests">
         <h2>Research Interests</h2>
         <p>Our laboratory is dedicated to the understanding of the genetic and molecular mechanisms of rare diseases, with particular focus on ciliopathies. Through interdisciplinary collaboration with clinical scientists, we bridge the genotype-phenotype gap, using comparative genomics and functional analysis to uncover disease mechanisms and therapeutic targets.</p>
@@ -65,14 +74,14 @@
         </div>
         
         <div class="research-section">
-            <img src="research2.jpeg" alt="Research II" class="large-image">
+            <img src="esearch3.jpg" alt="Research II" class="large-image">
             <h3>II. Understanding Cilia-Cilia Joining and Inter-Ciliary Communication in Rare Diseases</h3>
             <p>Recent discoveries highlight dynamic cilia-cilia interactions like cilia-cilia joining. We are fascinated by dissecting the molecular machinery regulating cilia-cilia joining and cilia-cilia joining's role in cellular signal transduction and tissue homeostasis. Identifying key proteins and pathways required for cilia-cilia joining, we anticipate to discover how cilia-cilia joining controls coordinated ciliary function and what occurs when they are compromised.</p>
             <p><strong>Methods:</strong> Advanced Light Microscopy (Confocal, Super-Resolution), Live-Cell Imaging, Proteomics, Genetic Knockdown/Knockout</p>
         </div>
         
         <div class="research-section">
-            <img src="research3.jpg" alt="Research III" class="large-image">
+            <img src="research2.jpeg" alt="Research III" class="large-image">
             <h3>III. Disentangling the Molecular Pathways Regulating Ciliogenesis and Rare Disease Genes</h3>
             <p>Ciliogenesis and other rare disease pathways are intricate regulatory circuits that coordinate gene expression and protein assembly. The laboratory investigates molecular pathways and regulating factors that oversee these processes. Through transcriptomics, proteomics, and functional genomics, we aim to define key signaling pathways that modulate cellular function and disease pathology.</p>
             <p><strong>Methods:</strong> CRISPR/Cas9 Gene Editing, Functional Assays, Immunofluorescence, Patient Sample Analysis, High-resolution Light Microscopy (Confocal, Super-Resolution), Live-Cell Imaging</p>
@@ -82,8 +91,6 @@
 
         <section id="publications" class="section" style="display: none;">
     <h1>Publications</h1>
-
-    <h2>Preprints</h2>
     <ul class="publication-list">
     <li>Turan, M. G., Kantarci, H., Cevik, S., & Kaplan, O. I. (2025). <a href="https://doi.org/10.1016/j.isci.2025.111791" target="_blank">ARL13B regulates juxtaposed cilia-cilia elongation in BBSome dependent manner in Caenorhabditis elegans</a>. <i>iScience</i>, <i>28</i>(2), 111791.</li>
     <li>Kim, A. H., Sakin, I., Viviano, S., et al. (2024). <a href="https://doi.org/10.26508/lsa.202402708" target="_blank">CC2D1A causes ciliopathy, intellectual disability, heterotaxy, renal dysplasia, and abnormal CSF flow</a>. <i>Life Sci Alliance</i>, <i>7</i>(10), e202402708.</li>
@@ -107,29 +114,7 @@
     <li>Cevik, S., Hori, Y., Kaplan, O. I., et al. (2010). <a href="https://doi.org/10.1083/jcb.200908133" target="_blank">Joubert syndrome Arl13b functions at ciliary membranes and stabilizes protein transport in Caenorhabditis elegans</a>. <i>J Cell Biol</i>, <i>188</i>(6), 953-69.</li>
     <li>Blacque, O. E., Cevik, S., & Kaplan, O. I. (2008). <a href="https://doi.org/10.2741/2871" target="_blank">Intraflagellar transport: from molecular characterisation to mechanism</a>. <i>Front Biosci</i>, <i>13</i>, 2633-52.</li>
 </ul>
-
-    <h2>Publications</h2>
-
-    <h3 class="publication-year">2023</h3>
-    <ul class="publication-list">
-        <li>
-            Cevik S, Zhao P, Zorluer A, Pir MS, Bian W, Kaplan OI. 
-            <a href="https://doi.org/10.1093/g3journal/jkad227" target="_blank">Matching variants for functional characterization of genetic variants</a>. 
-            <i>G3 Genes|Genomes|Genetics</i>, 2023; jkad227
-        </li>
-        <li>
-            Turan MG, Orhan ME, Cevik S, Kaplan OI. 
-            <a href="https://doi.org/10.1093/database/baad047" target="_blank">CiliaMiner: an integrated database for ciliopathy genes and ciliopathies</a>. 
-            <i>Database</i>, baad047
-        </li>
-        <li>
-            Kaplan OI. 
-            <a href="https://journals.tubitak.gov.tr/biology/vol47/iss1/7/" target="_blank">RPI-1 (human DCDC2) displays functional redundancy with Nephronophthisis 4 in regulating cilia biogenesis in C. elegans</a>. 
-            <i>Turk J Biol</i>, 2023. 
-        </li>
-    </ul>
 </section>
-
 
         <section id="open-positions" class="section" style="display: none;">
             <h1>Open Positions</h1>
@@ -149,17 +134,44 @@
 
     <section class="people-section"> 
         <div class="person">
-            <img src="Oktay.png" alt="Oktay I. Kaplan">
-            <h3>Oktay I. Kaplan, Dr.</h3>
-            <p>Principal Investigator</p>
-        </div>
-        <div class="person">
-            <img src="sebihacevikaplan.png" alt="Sebiha Cevik">
-            <h3>Sebiha Cevik, Dr.</h3>
-            <p>Principal Investigator</p>
-        </div>
-        </section> 
-
+            <section id="people" class="section" style="display: block;">
+           <section class="people-section">
+    <div class="person">
+        <img src="Oktay.png" alt="Oktay I. Kaplan">
+        <h3>Oktay I. Kaplan, Dr.</h3>
+        <p>Principal Investigator</p>
+    </div>
+    <div class="person">
+        <img src="sebihacevikaplan.png" alt="Sebiha Cevik">
+        <h3>Sebiha Cevik, Dr.</h3>
+        <p>Principal Investigator</p>
+    </div>
+    <div class="person">
+        <img src="elegans.png" alt="Ferhan Yenisert">
+        <h3>Ferhan Yenisert</h3>
+        <p>PhD Student</p>
+    </div>
+    <div class="person">
+        <img src="elegans.png" alt="Damal Puçak">
+        <h3>Damal Puçak</h3>
+        <p>Graduate Student</p>
+    </div>
+    <div class="person">
+        <img src="elegans.png" alt="Sinem Güzel">
+        <h3>Sinem Güzel</h3>
+        <p>Graduate Student</p>
+    </div>
+    <div class="person">
+        <img src="elegans.png" alt="Fatma Güzel">
+        <h3>Fatma Güzel</h3>
+        <p>Graduate Student</p>
+    </div>
+    <div class="person">
+        <img src="elegans.png" alt="Zanyar Demir">
+        <h3>Zanyar Demir</h3>
+        <p>Graduate Student</p>
+    </div>
+</section>
     <footer>
         <p>© 2025 Kaplan's Lab</p>
     </footer>
