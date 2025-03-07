@@ -233,11 +233,6 @@ footer {
 }
 
 
-/* Hide People Section by Default */
-.hide-people {
-    display: none;
-}
-
 /* Hide the People section by default */
 .people-section {
     display: none; /* Hidden by default */
@@ -245,7 +240,7 @@ footer {
 
 /* Display People section when on the People page */
 body.people .people-section {
-    display: grid; /* Show the people section */
+    display: grid; /* Show the people section only on the People page */
 }
 
 /* Hide People Info in Non-People Pages */
@@ -253,3 +248,4 @@ body:not(.people) .team-member,
 body:not(.people) .person {
     display: none;
 }
+
