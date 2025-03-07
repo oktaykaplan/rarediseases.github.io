@@ -238,19 +238,14 @@ footer {
     display: none;
 }
 
-/* Specific Styles for People Page */
+/* Hide the People section by default */
+.people-section {
+    display: none; /* Hidden by default */
+}
+
+/* Display People section when on the People page */
 body.people .people-section {
-    display: grid; /* Show people section only on People page */
-}
-
-body.people #home .section,
-body.people #research .section,
-body.people #publications .section {
-    display: none;
-}
-
-body.people #home .section {
-    display: block;
+    display: grid; /* Show the people section */
 }
 
 /* Hide People Info in Non-People Pages */
