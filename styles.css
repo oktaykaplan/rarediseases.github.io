@@ -102,10 +102,11 @@ body {
 /* Research Interests */
 .research-section {
     margin-top: 20px;
-    background: #f9f9f9;
+    background: #f9f9f9; /* Light background */
     padding: 15px;
     border-left: 5px solid #004080;
     border-radius: 5px;
+    color: #333; /* Ensure text is not black */
 }
 
 .research-section img {
@@ -207,7 +208,7 @@ footer {
 
 /* Specific Styles for People Page */
 body.people .people-section {
-    display: grid;
+    display: grid; /* Ensures People Section is visible */
 }
 
 body.people #home .section,
@@ -221,10 +222,7 @@ body.people #home .section {
 }
 
 /* Hide People Info in Non-People Pages */
-body:not(.people) .team-member {
-    display: none;
-}
-
+body:not(.people) .team-member,
 body:not(.people) .person {
     display: none;
 }
