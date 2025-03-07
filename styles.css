@@ -200,53 +200,31 @@ footer {
     margin-top: 20px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .navbar a {
-        padding: 8px 10px;
-    }
-
-    .research-grid {
-        flex-direction: column;
-    }
-
-    .research-item {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .research-item img {
-        width: 40px;
-    }
-
-    .people-section {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusts for small screens */
-    }
-
-    .person img {
-        width: 120px;
-        height: 120px;
-    }
-}
-
 /* Hide People Section by Default */
 .hide-people {
     display: none;
 }
 
 /* Specific Styles for People Page */
+body.people .people-section {
+    display: grid;
+}
+
 body.people #home .section,
 body.people #research .section,
 body.people #publications .section {
     display: none;
 }
 
-.people #home .section {
+body.people #home .section {
     display: block;
+}
+
+/* Hide People Info in Non-People Pages */
+body:not(.people) .team-member {
+    display: none;
+}
+
+body:not(.people) .person {
+    display: none;
 }
