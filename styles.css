@@ -145,3 +145,35 @@ footer {
     color: white;
     border-radius: 5px;
 }
+/* Team Navigation Links */
+.team-nav {
+    margin: 15px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-nav a {
+    color: #004080;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
+}
+
+.team-nav a:hover {
+    background-color: #004080;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Team Sections */
+.team-section {
+    margin-top: 20px;
+}
+
+.team-section h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
